@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  
+  #body{
+    min-height: 30vh;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0000FF;
+  }
+  
+  .header{
+    color: white;
+    width: 100%;
+    height: 90px;
+    padding: 20px 30px 0px;
+  }
+  
+  .header-title{
+    font-size: 50px;
+  }
+  
+  .header-text{
+    font-size: 20px;
+  }
+  
+  .section{
+    flex-flow: row wrap;
+    width: 90%;
+    display: flex;
+    flex-direction: row wrap;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .searchBox{
+    width: 200px !important;
+    float: right;
+    margin-top: 20px;
+    background: #0066cc;
+  }
+
+  .searchBox .inpt{
+    background: #0066cc;
+    border: none;
+    color: #fff;
+  }
+  
+  .searchBox #search-addon{
+    background: none;
+    color: #FFFFFF;
+  }
+
+  .bellIcon{
+    float: right;
+    margin-top: 19px;
+    background: #0066cc;
+    padding: 8px 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .searchBox .inpt::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #FFFFFF;
+    opacity: 1; /* Firefox */
+  }
+
+  .section > div {
+    padding: 30px;
+  }
+  
+  .small-div {
+    width: 20%;
+  }
+  
+  .big-div {
+    width: 80%;
+  }
+  
+  .bg-grey{
+    background-color:#f6f6f6;
+  }
+  
+  .orange {
+    color: #f4511e;
+  }
+  
+  .div-title {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  
+  .contact-container  {
+    flex-flow: column;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width:80%;
+    
+  }
+  .div-title{
+    text-align: center;
+  }
+  
+  
+  .contact-form{
+    display: flex;
+    flex-direction: row;
+    /*flex-flow: row wrap;*/
+    justify-content: space-between;
+    width:100%;
+  }
+  
+  #sect1{
+    width: 100%;
+  }
+  
+  #sect2{
+    width:100%;
+  }
+  
+  .contact-form > div {
+    width: 500px;
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+  }
+  
+  .input-field {
+    height: 40px;
+    margin: 15px 0;
+  }
+  
+  .contact-btn {
+    margin-top: 15px;
+    height: 40px;
+    color: white;
+    border: 0;
+    background-color: #f4511e;
+  }
+
+  .tabss{
+    flex-flow: column;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width:93%;
+    margin:0 50px;
+  }
+  .nav-tabs .nav-item{
+    cursor: pointer;
+    background: #0066cc;
+    margin-right: 5px;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    margin-bottom: 0px !important;
+  }
+  .nav-tabs .nav-link{
+    color: #FFFFFF;
+    font-size: 14px;
+  }
+  .tab-container{
+    background:#FFFFFF;
+    min-height: 400px;
+  }
+
+  .tabHeader{
+    width: 100%;
+    background: #f2f2f2;
+    height: 60px;
+    padding: 11px;
+  }
+
+  .pointSpan{
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-right: 40px;
+    color: #686868;
+  }
+
+  .cardList{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+  }
+
+  .cardList .card{
+    width: 13rem;
+    margin-left: 15px;
+    display: inline-block;
+  }
+
+  .cardList .card .card-body .date{
+    color: #c6c6c6;
+  }
+  .cardList .card .card-body h5{
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .cardList .card .card-body .card-text{
+    font-size: 12px;
+    color: #666;
+  }
+
+  .writer{
+    font-size: 10px;
+  }
+
+  .bottomIcons{
+    font-size: 10px;
+    margin-top: 10px;
+    columns: #d8d8d8;
+  }
+
+  .card-body{
+    padding: 10px !important;
+  }
+
+  .tabHeader button{
+    margin-top: 5px;
+    font-size: 12px;
+  }
+
+  .viewLink{
+    font-size: 12px;
+    padding-top: 14px;
+    padding-right: 14px;
+  }
+
+  .podcastHeader .title{
+    margin-left: 34px;
+    font-weight: bold;
+    color: #666;
+    padding-top: 14px;
+  }
+
+  .podcastBody .card-title{
+    margin-bottom:0px;
+  }
+
+  .podcastBody .date{
+    font-size:11px;
+  }
+  
+  @media only screen and (min-width:320px) and (max-width:725px){
+    .contact-form{
+      display: flex;
+      flex-direction: column;
+      /*flex-flow: row wrap;*/
+      width:80%;
+    }
+  
+    .section{
+      
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      
+    }
+  
+  
+    .small-div {
+      width: 80%;
+    }
+  }
+  
+  

@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./styles.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+import {Tabs, Tab} from 'react-bootstrap-tabs';
+import Dashboard from './components/Tabs/dashboard';
+import Header from './components/header';
+
+export default function App() {
+  return(
+        <div id='body'>
+            <Header/>
+            <TabData/>
+            <FooterContainer/>
+        </div>
+    );
+}
+
+const TabData = () =>{
+  return(
+      <div className='tabss'>
+          <Tabs onSelect={(index, label) => console.log(label + ' selected')}>
+              <Tab label="DASHBOARD">
+                <div class="tab-container">
+                  <Dashboard />
+                </div>
+              </Tab>
+              <Tab label="MY CONTENT">
+                <div class="tab-container">MY CONTENT</div>
+              </Tab>
+              <Tab label="MY WALLET">
+                <div class="tab-container">MY WALLET</div>
+              </Tab>
+          </Tabs>
+      </div>
   );
 }
 
-export default App;
+
+const FooterContainer = () => {
+    return(
+        <div className='contact-container'>
+        </div>
+    );
+
+}
